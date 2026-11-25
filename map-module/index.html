@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MonsoonPath</title>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>MonsoonPath</h1>
+    <p>Flood-Aware Walking Route Assistant</p>
+
+    <div class="controls">
+        <p id="status">Click on the map to select your starting point.</p>
+
+        <button onclick="getLocation()">Use My Location</button>
+        <button onclick="resetMap()">Reset Route</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="route-info">
+        <h3>Route Information</h3>
+        <p id="distance">Distance: --</p>
+        <p id="duration">Walking Time: --</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
